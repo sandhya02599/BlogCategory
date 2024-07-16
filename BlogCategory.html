@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogCategory</title>
+    <style>
+        .container{
+            
+            width: 100%;
+        }
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo {
+    margin-left: 150px;
+}
+.logo h1{
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center; 
+    padding: 10px 20px; 
+}
+
+nav ul {
+    margin-left: 20px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px; 
+    position: relative; 
+}
+
+nav ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px; 
+    display: block;
+    
+}
+
+nav ul li:hover ul {
+    display: block; 
+}
+
+
+nav ul li ul {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+nav ul li ul li {
+    width: 180px; 
+}
+
+nav ul li ul li a {
+    font-size: 16px; 
+    padding: 10px 15px; 
+    display: block; 
+    white-space: nowrap;
+}
+a:active,a:hover{
+    text-decoration: underline; 
+    text-decoration-thickness:1px ;
+}
+
+.end {
+    margin-left: auto;
+}
+
+.end ul {
+    display: flex;
+    align-items: center; 
+}
+
+.end ul li {
+    margin-left: 20px;
+}
+.popup {
+    width: 400px;
+    height: 200px;
+    background-color:grey;
+    margin-left: 400px;
+    margin-top: 100px;
+    display: none;
+  }
+  
+  .p {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px;
+  }
+  
+  .p p {
+    font-size: 20px;
+  }
+  
+  .pop-para {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+  }
+  
+  .popup .btn {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: none;
+  }
+        .A{
+            margin-top: 100px;
+        }
+        .A h1{
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 50px;
+        }
+        .A2{
+            display: flex;
+            margin-top: 100px;
+            column-gap: 40px;
+            margin-left: 50px;
+        }
+        .A2 h1:hover{
+            text-decoration: underline;
+        }
+        .B img{
+            height: 400px;
+            width: 600px;
+            border-radius: 10px;
+        }
+        .B{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            margin-left: 30px;
+            margin-top: 100px;
+            row-gap: 70px;
+
+        }
+        .C{
+            height: 200px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            margin-top: 100px;
+            display: flex;
+            column-gap: 250px;
+        }
+        .C h1{
+            padding-top: 70px;
+            padding-left: 20px;
+            font-size: 60px;
+        }
+        .C input{
+            height: 50px;
+            width: 600px;
+            margin-top: 80px;
+        }
+        .D{
+            margin-top: 100px;
+            display: flex;
+            column-gap: 250px;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            margin-left: 160px;
+        }
+        .D2{
+            padding-top: 100px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" target="_blank">HOME</a></li>
+                <li><a href="#" target="_blank">PAGE</a>
+                <ul>
+                    <li><a href="" target="_blank">ABOUT US</a></li>
+                    <li><a href="" target="_blank">SHOP DETAILS</a></li>
+                    <li><a href="" target="_blank">SHOP CATEGORY</a></li>
+                    <li><a href="" target="_blank">BLOG</a></li>
+                    <li><a href="" target="_blank">BLOG CATEGORY</a></li>
+                    <li><a href="" target="_blank">BLOG SINGLE</a></li>
+                    <li><a href="" target="_blank">404</a></li>
+                </ul>
+                </li>
+                <li><a href="#" target="_blank">SHOP</a></li>
+                <li><a href="#" target="_blank">CONTACT</a></li>
+            </ul>
+            <div class="logo"><h1>Fabrio</h1></div>
+            <div class="end">
+                <ul>
+                <li><a href="#" target="_blank">ACCOUNT</a></li>
+                <li><a href="" target="_blank" class="cart">CART 0</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="popup">
+            <div class="p">
+            <p>Your Cart</p>
+            <button id="close" class="btn">x</button>
+            </div>
+            <hr style="border:1px solid black">
+            <p class="pop-para">No items added </p>
+        </div>
+
+
+        <div class="A">
+            <h1>BLOG CATEGORY</h1>
+            <img src="image/full-length-stylish-multicultural-women.webp" width="100%" height="550px">
+        </div>
+        
+           
+              
+        <div class="C">
+            <h1>NEWSLATTER</h1>
+            <input type="text" placeholder="Enter Email Here">
+        </div>
+        <div class="D">
+            <div class="D1">
+                <h1>PAGES</h1><br>
+                <p>ABOUT US</p><br>
+                <p>STYLE GUIDE</p><br>
+                <p>LICENSES</p><br>
+                <p>CHANGELOG</p><br>
+                <p>CONTACT</p><br>
+            </div>
+            <div class="D2" style="text-align: center;">
+                <h1>FABRIO</h1><br>
+                <p>Powered by Webflow created by PeacefulQode.</p>
+            </div>
+            <div class="D3">
+                <h1>SOCIAL</h1><br>
+                <p>FACEBOOK</p><br>
+                <p>INSTAGRAM</p><br>
+                <p>YOUTUBE</p><br>
+                <p>LINKEDIN</p><br>
+                <p>TWITTER</p><br>
+            </div>
+        </div>       
+    </div>
+    
+</body>
+</html>
